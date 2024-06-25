@@ -1,0 +1,27 @@
+.featured-image{
+  width: 100%;
+  height: 350px;
+  opject-fit:cover;
+  border-radius: calc(0.24rem - 1px);
+}
+.unstyle{
+  text-decoration: none;
+}
+.single-image{
+  width: 100%;
+  height: 500px;
+  opject-fit:cover;
+  border-radius: calc(0.24rem - 1px);
+}
+
+.post-image{
+  width: 100%;
+  height: 350px;
+  opject-fit:cover;
+  border-radius: calc(0.24rem - 1px);
+}
+
+.card-height{
+  height:280px;
+  position relative;
+}
