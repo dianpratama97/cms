@@ -1,0 +1,9 @@
+php artisan cache:clear
+php artisan route:clear
+php artisan view:clear
+php artisan config:clear
+
+git add .
+git commit -m "my changes" 
+git remote add origin https://github.com/dianpratama97/cms.git
+git push -u origin master

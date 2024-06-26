@@ -1,19 +1,98 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="en" class="light-style layout-wide customizer-hide" dir="ltr" data-theme="theme-default"
+    data-assets-path="{{ asset('backend') }}/assets/" data-template="vertical-menu-template-no-customizer">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CMS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Pemeliharaan Website</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('backend') }}/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/libs/typeahead-js/typeahead.css" />
+
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="{{ asset('backend') }}/assets/vendor/css/pages/page-misc.css" />
+
+    <!-- Helpers -->
+    <script src="{{ asset('backend') }}/assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{ asset('backend') }}/assets/js/config.js"></script>
 </head>
 
-<body style="background-color: rgb(218, 244, 25)">
-    <h1 class="text-center" style="margin-top: 20%">Sistem Sedang Dalam Pemeliharaan</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+<body style="background-color: rgb(26, 180, 223); ">
+    <!-- Content -->
+
+    <!--Under Maintenance -->
+    <div class="container-xxl container-p-y">
+        <div class="misc-wrapper">
+            <h1 class="mb-1 mx-2" style="color: rgb(255, 255, 255)">{{ pengaturan()->app_name }}</h1>
+            <h1 class="mb-1 mx-2" style="color: rgb(255, 255, 255)">Sedang Pemeliharaan System!</h1>
+            <h2 style="color: rgb(255, 255, 255)">Silakan Kembali Nanti.</h2>
+            <div class="mt-4">
+                <img src="{{ asset('backend') }}/assets/img/illustrations/page-misc-under-maintenance.png"
+                    alt="page-misc-under-maintenance" width="550" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid misc-bg-wrapper misc-under-maintenance-bg-wrapper">
+        <img src="{{ asset('backend') }}/assets/img/illustrations/bg-shape-image-light.png"
+            alt="page-misc-under-maintenance" data-app-light-img="illustrations/bg-shape-image-light.png"
+            data-app-dark-img="illustrations/bg-shape-image-dark.png" />
+    </div>
+    <!-- /Under Maintenance -->
+
+    <!-- / Content -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="{{ asset('backend') }}/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/popper/popper.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/js/bootstrap.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="{{ asset('backend') }}/assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="{{ asset('backend') }}/assets/js/main.js"></script>
+
+    <!-- Page JS -->
 </body>
 
 </html>

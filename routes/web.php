@@ -20,9 +20,9 @@ use App\Http\Controllers\frontend\GalleryController as FrontGalleryController;
 
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified']);
+// Route::get('/', function () {
+//     return view('pemeliharaan');
+// });
 
 Route::get('/', [HomeController::class, 'index'])->name('welcome');
 
