@@ -20,11 +20,11 @@ use App\Http\Controllers\frontend\GalleryController as FrontGalleryController;
 
 
 
-// Route::get('/', function () {
-//     return view('pemeliharaan');
-// });
+Route::get('/', function () {
+    return view('pemeliharaan');
+});
 
-Route::get('/', [HomeController::class, 'index'])->name('welcome');
+// Route::get('/', [HomeController::class, 'index'])->name('welcome');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
