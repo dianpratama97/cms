@@ -74,6 +74,7 @@
                         </div>
                         <div class="card-footer">
                             <button type="button" class="btn btn-outline-danger">Batal</button>
+                            <a href="{{ route('/') }}" class="btn btn-outline-danger">Home</a>
                             <button type="submit" class="btn btn-outline-primary">Kirim</button>
                         </div>
                     </form>
