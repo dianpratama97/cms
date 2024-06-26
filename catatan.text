@@ -5,5 +5,5 @@ php artisan config:clear
 
 git add .
 git commit -m "update new" 
-git remote add origin https://github.com/dianpratama97/cms.git -> lansung git push
 git push -u origin master
+git remote add origin https://github.com/dianpratama97/cms.git -> lansung git push
