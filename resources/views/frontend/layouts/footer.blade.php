@@ -1,4 +1,29 @@
-<footer class="landing-footer bg-body footer-text">
+<footer id="newsletter">
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-lg-12">
+                <div class="copyright-text">
+                    <p>Copyright ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        SMKN 1 SINGKEP.
+                        <br>Design: <a href="https://smkn1singkep.sch.id/" target="_blank"
+                            title="css templates">Dian Pratama, S.Pd</a><br>
+
+                        Distributed By: <a href="https://themewagon.com/" target="_blank"
+                            title="Bootstrap Template World">ThemeWagon</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+{{-- <footer class="landing-footer bg-body footer-text">
     <div class="footer-top position-relative overflow-hidden z-1">
         <img src="{{ asset('frontend') }}/assets/img/front-pages/backgrounds/footer-bg-light.png" alt="footer bg"
             class="footer-bg banner-bg-img z-n1" data-app-light-img="front-pages/backgrounds/footer-bg-light.png"
@@ -23,4 +48,4 @@
 
         </div>
     </div>
-</footer>
+</footer> --}}

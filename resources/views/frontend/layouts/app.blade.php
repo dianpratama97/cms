@@ -1,36 +1,46 @@
-<!doctype html>
-<html lang="en" class="light-style layout-navbar-fixed layout-wide" dir="ltr" data-theme="theme-default"
-    data-assets-path="{{ asset('frontend') }}/assets/" data-template="front-pages-no-customizer">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>{{ pengaturan()->app_name }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <meta name="description" content="" />
 
     @include('frontend.layouts.css')
+
 </head>
 
 <body>
-    <script src="{{ asset('frontend') }}/assets/vendor/js/dropdown-hover.js"></script>
-    <script src="{{ asset('frontend') }}/assets/vendor/js/mega-dropdown.js"></script>
 
-    <!-- Navbar: Start -->
-    @include('frontend.layouts.nav')
-    <!-- Navbar: End -->
-
-    <!-- Sections:Start -->
-    <div data-bs-spy="scroll" class="scrollspy-example">
-        @yield('content')
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
-    <!-- / Sections:End -->
+    <!-- ***** Preloader End ***** -->
 
-    <!-- Footer: Start -->
+    <!-- ***** Header Area Start ***** -->
+    @include('frontend.layouts.header')
+    <!-- ***** Header Area End ***** -->
+
+
+    @yield('content')
+
+
+    {{-- footer --}}
     @include('frontend.layouts.footer')
-    <!-- Footer: End -->
+
+    {{-- js --}}
     @include('frontend.layouts.js')
 </body>
 

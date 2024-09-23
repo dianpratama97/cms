@@ -1,12 +1,7 @@
-<section id="landingReviews" class="section-py bg-body landing-reviews pb-0">
+<div id="services" class="services section">
     <!-- What people say slider: Start -->
     <div class="container">
-        <h3 class="text-center mb-4" style="margin-top: -5%">
-            <span class="position-relative fw-bold z-1">JURUSAN SMKN 1 SINGKEP
-                <img src="{{ asset('frontend') }}/assets/img/front-pages/icons/section-title-icon.png"
-                    alt="laptop charging" class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
-            </span>
-        </h3>
+  
         <div class="row align-items-center gx-0 gy-4 g-lg-5">
 
             <div class="col-md-12 col-lg-12 col-xl-12">
@@ -45,4 +40,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

@@ -1,11 +1,6 @@
-<section id="landingContact" class="section-py bg-body landing-contact">
-    <div class="container">
-        <h3 class="text-center mb-4" style="margin-top: -5%">
-            <span class="position-relative fw-bold z-1">HUBUNGI KAMI
-                <img src="{{ asset('frontend') }}/assets/img/front-pages/icons/section-title-icon.png"
-                    alt="laptop charging" class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
-            </span>
-        </h3>
+<div id="services" class="services section">
+    <div class="container mb-5">
+
         <div class="row gy-4">
             <div class="col-lg-5">
                 <div class="contact-img-box position-relative border p-2 h-100">
@@ -16,7 +11,7 @@
                         class="contact-img w-100 scaleX-n1-rtl" />
                     <div class="pt-3 px-4 pb-1">
                         <div class="row gy-3 gx-md-4">
-                            <div class="col-md-6 col-lg-12 col-xl-6">
+                            <div class="col-md-6 col-lg-12 col-xl-12">
                                 <div class="d-flex align-items-center">
                                     <div class="badge bg-label-danger rounded p-2 me-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -29,15 +24,15 @@
                                             <path d="M3 7l9 6l9 -6" />
                                         </svg>
                                     </div>
-                                    <div>
-                                        <p class="mb-0">Email</p>
-                                        <h6 class="mb-0">
-                                            <a href="#" class="text-heading">{{ $config->email }}</a>
-                                        </h6>
+                                    <div >
+                                        <p class="mb-0" style="color: black">Email</p>
+                                        <p class="mb-0">
+                                            <a href="#" class="text-heading" style="color: black" >{{ $config->email }}</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-12 col-xl-6">
+                            <div class="col-md-6 col-lg-12 col-xl-12">
                                 <div class="d-flex align-items-center">
                                     <div class="badge bg-label-success rounded p-2 me-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -51,17 +46,17 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <p class="mb-0">Phone/WA</p>
+                                        <p class="mb-0" style="color: black">Phone/WA</p>
                                         <h5 class="mb-0">
                                             <a href="https://wa.me/{{ $config->no_telp }}" target="_blank"
-                                                class="text-heading">{{ $config->no_telp }}
+                                                class="text-heading" style="color: black">{{ $config->no_telp }}
                                             </a>
                                         </h5>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-lg-12 col-xl-6">
+                            <div class="col-md-6 col-lg-12 col-xl-12">
                                 <div class="d-flex align-items-center">
                                     <div class="badge bg-label-danger rounded p-2 me-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -76,16 +71,16 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <p class="mb-0">Instagram</p>
+                                        <p class="mb-0" style="color: black">Instagram</p>
                                         <h5 class="mb-0">
-                                            <a href="" target="_blank" class="text-heading">{{ $config->ig }}
+                                            <a href="" target="_blank" class="text-heading" style="color: black">{{ $config->ig }}
                                             </a>
                                         </h5>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-lg-12 col-xl-6">
+                            <div class="col-md-6 col-lg-12 col-xl-12">
                                 <div class="d-flex align-items-center">
                                     <div class="badge bg-label-info rounded p-2 me-2">
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +93,9 @@
                                         </svg>
                                     </div>
                                     <div>
-                                        <p class="mb-0">Facebook</p>
+                                        <p class="mb-0" style="color: black">Facebook</p>
                                         <h5 class="mb-0">
-                                            <a href="" target="_blank" class="text-heading">{{ $config->fb }}
+                                            <a href="" target="_blank" class="text-heading" style="color: black">{{ $config->fb }}
                                             </a>
                                         </h5>
                                     </div>
@@ -168,4 +163,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

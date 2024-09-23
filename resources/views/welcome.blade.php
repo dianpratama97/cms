@@ -3,7 +3,7 @@
     <!-- Hero: Start -->
     @include('frontend.component.hero')
     <!-- Hero: End -->
-
+    @include('frontend.component.menu')
     <!-- Sambutan features: Start -->
     @include('frontend.component.sambutan')
     <!-- Sambutan features: End -->
